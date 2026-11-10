@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & AQI Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <h1>Weather and Air Quality</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="शहर का नाम दर्ज करें...">
+            <button id="searchBtn">सर्च करें</button>
+        </div>
+        
+        <div id="weatherResult" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temp"></p>
+            <p id="desc"></p>
+
+            <!-- यहाँ पर नए वेदर फीचर्स जोड़े गए हैं -->
+            <div class="weather-extras">
+                <p id="windSpeed">हवा की गति (Wind): --</p>
+                <p id="humidity">नमी (Humidity): --</p>
+                <p id="weatherCondition">मौसम की हालत : --</p>
+            </div>
+            
+            <div class="aqi-box">
+                <p id="aqiLevel">AQI लेवल: --</p>
+                <p id="pm25">PM2.5: --</p>
+                <p id="pm10">PM10: --</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

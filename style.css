@@ -1,0 +1,121 @@
+/* पूरी बॉडी का स्टाइल और फॉन्ट */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* मुख्य वेदर कार्ड (सफेद बॉक्स) */
+.weather-card {
+    background: #61f40593;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 380px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* हेडिंग */
+.weather-card h1 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* सर्च बॉक्स एरिया */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #1a73e8;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #1557b0;
+}
+
+/* रिजल्ट छिपाने के लिए */
+.hidden {
+    display: none;
+}
+
+/* शहर का नाम और तापमान */
+#cityName {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#temp {
+    font-size: 38px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin: 5px 0;
+}
+
+#desc {
+    font-size: 15px;
+    color: #666666;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* हवा और नमी (Weather Extras) का डिज़ाइन */
+.weather-extras {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #444;
+    border: 1px solid #e9ecef;
+}
+
+/* AQI बॉक्स का डिज़ाइन */
+.aqi-box {
+    background: #e8f0fe;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #d2e3fc;
+}
+
+.aqi-box p {
+    margin: 6px 0;
+    font-size: 13px;
+    color: #174ea6;
+    font-weight: 500;
+}
